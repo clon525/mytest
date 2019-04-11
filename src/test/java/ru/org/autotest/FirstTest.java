@@ -17,7 +17,9 @@ public class FirstTest extends AutoSettings {
         (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='passp-field-passwd']")));
         driver.findElement(By.xpath("//input[@id='passp-field-passwd']")).sendKeys("Testing98");
 //нажатие на кнопку "Войти"
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
+            driver.findElement(By.xpath("//button[@type='submit']")).click();
+            //driver.findElement(By.xpath("//button[@data-lego='react]")).click();
+
 //проверка соответствия названия заголовка
         (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.header2-nav__user")));
         Assert.assertTrue(driver.findElement(By.cssSelector("div.header2-nav__user")).getText().equals("Мой профиль"));
