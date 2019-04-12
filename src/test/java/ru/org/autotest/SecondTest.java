@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class SecondTest extends AutoSettings {
@@ -45,12 +46,21 @@ public class SecondTest extends AutoSettings {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         driver.findElementByClassName("header2__nav").click();
         driver.findElementByXPath("//*[contains(text(), 'Настройки')]").click();
+
+        String oldTab = driver.getWindowHandle();
+        ArrayList<String> newTab = new ArrayList<String>(driver.getWindowHandles());
+        newTab.remove(oldTab);
+        // change focus to new tab
+        driver.switchTo().window(newTab.get(0));
+
+
         driver.findElementByClassName("");
         driver.findElementByXPath("//*[contains(text(), 'Регион')]");
        // newcity = driver.findElementByClassName("link__inner").getText();
         //if (newcity.equals("Хвалынск") != true){
       //      Assert.fail("Неверный город " + newcity);
        // }
+        driver.close();
     }
 
 }

@@ -22,7 +22,9 @@ public class FirstTest extends AutoSettings {
 
 //проверка соответствия названия заголовка
         (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.header2-nav__user")));
-        Assert.assertTrue(driver.findElement(By.cssSelector("div.header2-nav__user")).getText().equals("Мой профиль"));
+        Assert.assertEquals(driver.findElement(By.cssSelector("div.header2-nav__user")).getText(),"Мой профиль", "Кнопка входа профился не найдена");
+        driver.close();
     }
+
 
 }
