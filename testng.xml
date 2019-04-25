@@ -1,10 +1,32 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="AllTestSuite" verbose="1" >
-    <test name="FirstTest">
+    <test name="LoginTest">
         <classes>
             <class name="ru.org.autotest.FirstTest"/>
+        </classes>
+    </test>
+    <test name="ChangeCityTest1">
+        <parameter name="cityName" value="Хвалынск"/>
+        <classes>
             <class name="ru.org.autotest.SecondTest"/>
+        </classes>
+    </test>
+    <test name="ChangeCityTest2">
+        <parameter name="cityName" value="Энгельс"/>
+        <classes>
+            <class name="ru.org.autotest.SecondTest"/>
+        </classes>
+    </test>
+    <test name="ChangeCityTest3">
+        <parameter name="cityName" value="Балаково"/>
+        <classes>
+            <class name="ru.org.autotest.SecondTest"/>
+        </classes>
+    </test>
+    <test name="DeliveryTest">
+        <classes>
+            <class name="ru.org.autotest.ThirdTest"/>
         </classes>
     </test>
 </suite>
