@@ -56,6 +56,5 @@ public class SecondTest extends AutoSettings {
         Assert.assertEquals(newcity, city2, "Города не совпадают");
         driver.close();
         driver.switchTo().window(winHandleBefore);
-        driver.close();
     }
 }
