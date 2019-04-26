@@ -2,20 +2,27 @@ package ru.org.autotest;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.testng.ITestContext;
+
 import java.util.concurrent.TimeUnit;
 
+
 public class SecondTest extends AutoSettings {
-    @Test
+    @DataProvider(name = "cityName")
 
-    @Parameters("cityName")
+    public Object[] createCities(ITestContext context) {
+        return new Object[]{
+                "Хвалынск", "Энгельс", "Балаково"};
+    }
 
+    @Test(dataProvider = "cityName")
     public void changeCity(String cityName) {
         driver.findElement(By.tagName("body")).sendKeys(Keys.ESCAPE);
         driver.findElement(By.xpath("//span[@class='link__inner']")).click();
@@ -23,12 +30,11 @@ public class SecondTest extends AutoSettings {
                 findElement(By.cssSelector("[class*='input__control']"));
         city.click();
         city.sendKeys(cityName);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.findElementByClassName("suggest2-item_type_text").click();
-        for (int i = 0; i < 3; i++) {
-            city.sendKeys(Keys.ENTER);
-        }
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.region-suggest__list-item")));
+        driver.findElement(By.cssSelector("div.region-suggest__list-item")).click();
+        //нажатие на кнопку "продолжить с новым регионом"
+        driver.findElement(By.cssSelector("div.header2-region-popup > button")).click();
+        (new WebDriverWait(driver, 30)).until(ExpectedConditions.textToBe(By.cssSelector("span.link__inner"), cityName));
         String newcity = driver.findElementByClassName("link__inner").getText();
         if (newcity.equals(cityName) != true) {
             Assert.fail("Неверный город " + newcity);
@@ -41,7 +47,195 @@ public class SecondTest extends AutoSettings {
         //нажатие на кнопку "Войти"
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-        driver.findElementByClassName("header2__nav").click();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.header2-nav__user")));
+        driver.findElement(By.cssSelector("div.header2-nav__user")).click();
         driver.findElementByXPath("//*[contains(text(), 'Настройки')]").click();
         String winHandleBefore = driver.getWindowHandle();
 

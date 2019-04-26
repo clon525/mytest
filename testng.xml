@@ -6,20 +6,7 @@
             <class name="ru.org.autotest.FirstTest"/>
         </classes>
     </test>
-    <test name="ChangeCityTest1">
-        <parameter name="cityName" value="Хвалынск"/>
-        <classes>
-            <class name="ru.org.autotest.SecondTest"/>
-        </classes>
-    </test>
-    <test name="ChangeCityTest2">
-        <parameter name="cityName" value="Энгельс"/>
-        <classes>
-            <class name="ru.org.autotest.SecondTest"/>
-        </classes>
-    </test>
-    <test name="ChangeCityTest3">
-        <parameter name="cityName" value="Балаково"/>
+    <test name="ChangeCityTest">
         <classes>
             <class name="ru.org.autotest.SecondTest"/>
         </classes>
