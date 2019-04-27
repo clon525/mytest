@@ -1,30 +1,19 @@
 package ru.org.autotest;
 
-
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
-    private ChromeDriver driver;
+    private WebDriver driver;
 
-    public HomePage(ChromeDriver driver) {
+    public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -83,7 +72,7 @@ public class HomePage {
 
     @Step("Check city")
     public void checkCity1(String cityName) {
-        String newcity = driver.findElementByClassName("link__inner").getText();
+        String newcity = driver.findElement(By.className("link__inner")).getText();
         if (newcity.equals(cityName) != true) {
             Assert.fail("Неверный город " + newcity);
         }
@@ -91,7 +80,7 @@ public class HomePage {
 
     @Step("Click setting button")
     public void clickSettingsButton() {
-        driver.findElementByXPath("//*[contains(text(), 'Настройки')]").click();
+        driver.findElement(By.xpath("//*[contains(text(), 'Настройки')]")).click();
     }
 
     @Step("Switch to settings tab")

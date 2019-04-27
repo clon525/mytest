@@ -2,14 +2,14 @@ package ru.org.autotest;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
-    private ChromeDriver driver;
+    private WebDriver driver;
 
-    public LoginPage(ChromeDriver driver) {
+    public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 

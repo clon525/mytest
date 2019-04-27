@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ru.org.autotest.ThirdTest" class="method navigator-link" hash-for-method="toothbrushOrder">toothbrushOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="ru.org.autotest.SecondTest" class="method navigator-link" hash-for-method="changeCity(Балаково)">changeCity(Балаково)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="ru.org.autotest.SecondTest" class="method navigator-link" hash-for-method="changeCity(Хвалынск)">changeCity(Хвалынск)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -112,12 +126,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="ru.org.autotest.SecondTest" class="method navigator-link" hash-for-method="changeCity(Хвалынск)">changeCity(Хвалынск)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="ru.org.autotest.ThirdTest" class="method navigator-link" hash-for-method="toothbrushOrder">toothbrushOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="ru.org.autotest.SecondTest" class="method navigator-link" hash-for-method="changeCity(Балаково)">changeCity(Балаково)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,9 +146,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">ru.org.autotest.ThirdTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,6 +157,33 @@
                   <a name="toothbrushOrder">
                   </a> <!-- toothbrushOrder -->
                   <span class="method-name">toothbrushOrder</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.linkText: Перейти в корзину (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-4P1RL6G&apos;, ip: &apos;192.168.1.68&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\Andrew\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:29845}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 448f8c5e1a9847aab06ddf606c058e0f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at ru.org.autotest.ElectricToothbrushesPage.waitSmallWindow(ElectricToothbrushesPage.java:74)
+	at ru.org.autotest.ThirdTest.toothbrushOrder(ThirdTest.java:34)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ru.org.autotest.FirstTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userLogin">
+                  </a> <!-- userLogin -->
+                  <span class="method-name">userLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,10 +196,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="changeCity(Балаково)">
-                  </a> <!-- changeCity(Балаково) -->
+                  <a name="changeCity(Хвалынск)">
+                  </a> <!-- changeCity(Хвалынск) -->
                   <span class="method-name">changeCity</span>
-                  <span class="parameters">(Балаково)</span>
+                  <span class="parameters">(Хвалынск)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -176,25 +212,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="changeCity(Хвалынск)">
-                  </a> <!-- changeCity(Хвалынск) -->
+                  <a name="changeCity(Балаково)">
+                  </a> <!-- changeCity(Балаково) -->
                   <span class="method-name">changeCity</span>
-                  <span class="parameters">(Хвалынск)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">ru.org.autotest.FirstTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userLogin">
-                  </a> <!-- userLogin -->
-                  <span class="method-name">userLogin</span>
+                  <span class="parameters">(Балаково)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,28 +277,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'toothbrushOrder')
 data.setCell(0, 2, 'ru.org.autotest.ThirdTest')
-data.setCell(0, 3, 42699);
+data.setCell(0, 3, 68716);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'changeCity')
 data.setCell(1, 2, 'ru.org.autotest.SecondTest')
-data.setCell(1, 3, 24970);
+data.setCell(1, 3, 42490);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'changeCity')
 data.setCell(2, 2, 'ru.org.autotest.SecondTest')
-data.setCell(2, 3, 24758);
+data.setCell(2, 3, 42377);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'changeCity')
 data.setCell(3, 2, 'ru.org.autotest.SecondTest')
-data.setCell(3, 3, 21490);
+data.setCell(3, 3, 37073);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'userLogin')
 data.setCell(4, 2, 'ru.org.autotest.FirstTest')
-data.setCell(4, 3, 13254);
+data.setCell(4, 3, 17942);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -310,65 +331,67 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userLogin</span>
-                <span class="method-start">13270 ms</span>
+                <span class="method-start">14998 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">signOut</span>
-                <span class="method-start">26554 ms</span>
+                <span class="method-start">32979 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ru.org.autotest.SecondTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">27487 ms</span>
+                <span class="method-start">34065 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeCity(Хвалынск)</span>
-                <span class="method-start">43659 ms</span>
+                <span class="method-start">49457 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">signOut</span>
-                <span class="method-start">68427 ms</span>
+                <span class="method-start">91842 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">69391 ms</span>
+                <span class="method-start">92870 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeCity(Энгельс)</span>
-                <span class="method-start">85496 ms</span>
+                <span class="method-start">106652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">signOut</span>
-                <span class="method-start">106989 ms</span>
+                <span class="method-start">149145 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">108106 ms</span>
+                <span class="method-start">150306 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeCity(Балаково)</span>
-                <span class="method-start">119252 ms</span>
+                <span class="method-start">162693 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">signOut</span>
-                <span class="method-start">144859 ms</span>
+                <span class="method-start">199770 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ru.org.autotest.ThirdTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">145798 ms</span>
+                <span class="method-start">200755 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">toothbrushOrder</span>
-                <span class="method-start">158006 ms</span>
+                <span class="method-start">213958 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">signOut</span>
-                <span class="method-start">200708 ms</span>
+                <span class="method-start">283093 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

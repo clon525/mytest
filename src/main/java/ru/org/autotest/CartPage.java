@@ -3,17 +3,15 @@ package ru.org.autotest;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.List;
-
 public class CartPage {
-    private ChromeDriver driver;
+    private WebDriver driver;
 
-    public CartPage(ChromeDriver driver) {
+    public CartPage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -40,8 +38,6 @@ public class CartPage {
 
         int fullDelivery = Integer.parseInt(driver.findElement(By.xpath("//div[contains(@data-auto, " +
                 "'total-delivery')]//span[2]")).getText().replaceAll("\\s+|\\D", ""));
-
-        //проверка на эквивалентность
         Assert.assertEquals(fullProduct + fullDelivery, fullPrice);
         return fullProduct;
     }
@@ -77,5 +73,4 @@ public class CartPage {
                 "'total-items')]//span[2]")).getText().replaceAll("\\s+|\\D", ""));
         Assert.assertEquals(fullProduct, fullPrice);
     }
-
 }

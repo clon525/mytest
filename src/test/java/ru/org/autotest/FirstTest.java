@@ -1,8 +1,11 @@
 package ru.org.autotest;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 
+@Listeners({FailScreen.class})
 public class FirstTest extends AutoSettings {
+
     @Test
     public void userLogin() {
         HomePage home1 = new HomePage(getDriver());

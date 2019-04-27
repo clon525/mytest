@@ -3,17 +3,16 @@ package ru.org.autotest;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.util.List;
 
 public class ElectricToothbrushesPage {
-    private ChromeDriver driver;
+    private WebDriver driver;
 
-    public ElectricToothbrushesPage(ChromeDriver driver) {
+    public ElectricToothbrushesPage(WebDriver driver) {
         this.driver = driver;
     }
 
