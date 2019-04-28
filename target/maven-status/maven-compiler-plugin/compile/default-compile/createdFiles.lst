@@ -1,4 +1,9 @@
+ru\org\autotest\EventScreen.class
+ru\org\autotest\FailScreen.class
 ru\org\autotest\AutoSettings.class
 ru\org\autotest\SettingsPage.class
 ru\org\autotest\LoginPage.class
+ru\org\autotest\ToothbrushesPage.class
+ru\org\autotest\ElectricToothbrushesPage.class
+ru\org\autotest\CartPage.class
 ru\org\autotest\HomePage.class

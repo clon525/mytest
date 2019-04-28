@@ -79,7 +79,4 @@ public class ElectricToothbrushesPage {
     public void clickCartButton(){
         driver.findElement(By.xpath("//span[text()='Перейти в корзину']")).click();
     }
-
-
-
 }

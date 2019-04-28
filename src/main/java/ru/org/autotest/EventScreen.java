@@ -12,10 +12,12 @@ public class EventScreen extends AbstractWebDriverEventListener{
     public void beforeClickOn(WebElement element, WebDriver driver) {
         makeScreen();
     }
+
     @Override
     public void afterClickOn(WebElement element, WebDriver driver) {
         makeScreen();
     }
+
     @Override
     public void afterChangeValueOf(WebElement element, WebDriver driver, java.lang.CharSequence[] keysToSend){
         makeScreen();

@@ -86,7 +86,6 @@ public class HomePage {
     @Step("Switch to settings tab")
     public String switchTab() {
         String winHandleBefore = driver.getWindowHandle();
-
         //Perform the click operation that opens new window
         //Switch to new window opened
         for (String winHandle : driver.getWindowHandles()) {
@@ -96,17 +95,18 @@ public class HomePage {
     }
 
     @Step("Click catalog button")
-    public void clickCatalogButton(){
+    public void clickCatalogButton() {
         driver.findElement(By.cssSelector("div.n-topmenu-new-vertical__left > div > button")).click();
     }
+
     @Step("Choose appliances in catalog")
-    public void chooseAppliances(){
+    public void chooseAppliances() {
         Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(By.linkText("Бытовая техника"))).build().perform();
     }
 
     @Step("Click on toothbrushes")
-    public void clickToothbrushes(){
+    public void clickToothbrushes() {
         // кликнуть на раздел "Зубные щетки и ирригаторы"
         driver.findElement(By.linkText("Зубные щетки и ирригаторы")).click();
     }

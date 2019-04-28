@@ -19,11 +19,11 @@ public class AutoSettings {
 
     @BeforeMethod
     public void setup() {
-        EventScreen ei = new EventScreen();
+        EventScreen checker = new EventScreen();
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Andrew\\Downloads\\chromedriver_win32\\chromedriver.exe");
         ChromeDriver driver1 = new ChromeDriver();
         driver = new EventFiringWebDriver(driver1);
-        driver.register(ei);
+        driver.register(checker);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://beru.ru/");
@@ -31,7 +31,7 @@ public class AutoSettings {
 
     @AfterMethod
     public void signOut() {
-        // возвращение системы в исходное состояние
+        // return system to default
         (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.header2-nav__user")));
         if (driver.findElement(By.cssSelector("div.header2-nav__user")).getText() == "Мой профиль") {
             driver.findElement(By.className("header2-nav__user")).click();
