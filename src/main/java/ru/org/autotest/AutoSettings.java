@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+
 import java.util.concurrent.TimeUnit;
 
 public class AutoSettings {
@@ -17,10 +18,12 @@ public class AutoSettings {
         return driver;
     }
 
+    public static final String CHPATH = System.getProperty("chrome", "C:\\Users\\Andrew\\Downloads\\chromedriver_win32\\chromedriver.exe");
+
     @BeforeMethod
     public void setup() {
         EventScreen checker = new EventScreen();
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Andrew\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", CHPATH);
         ChromeDriver driver1 = new ChromeDriver();
         driver = new EventFiringWebDriver(driver1);
         driver.register(checker);
