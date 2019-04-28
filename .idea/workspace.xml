@@ -33,30 +33,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/AutoSettings.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="169">
+              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding>
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#1319#1320#0" expanded="true" />
+                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2079#2080#0" expanded="true" />
+                <element signature="e#2829#2830#0" expanded="true" />
+                <element signature="e#2919#2920#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/ElectricToothbrushesPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+            <state relative-caret-position="294">
+              <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#450#451#0" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#2891#2892#0" expanded="true" />
-                <element signature="e#2981#2982#0" expanded="true" />
+                <element signature="e#2906#2907#0" expanded="true" />
+                <element signature="e#2996#2997#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +76,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/CartPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="274">
+              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/org/autotest/ThirdTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,18 +130,18 @@
         <option value="$PROJECT_DIR$/mytest.iml" />
         <option value="$PROJECT_DIR$/src/test/java/ru/org/autotest/SecondTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/ElectricToothBrushesPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/org/autotest/ThirdTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/SettingsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/ToothbrushesPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/org/autotest/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/CartPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/ElectricToothbrushesPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/EventScreen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/FailScreen.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/HomePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/AutoSettings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/FailScreen.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/org/autotest/ThirdTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/org/autotest/ElectricToothbrushesPage.java" />
       </list>
     </option>
   </component>
@@ -217,7 +240,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556451571965" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556455759936" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/test-classes/ru/org/autotest/SecondTest.class" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -244,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Maven [clean,test]">
+  <component name="RunManager" selected="TestNG.ThirdTest">
     <configuration name="FirstTest.userLogin" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="mytest" />
       <extension name="coverage">
@@ -469,48 +492,47 @@
       <workItem from="1556372764283" duration="15137000" />
       <workItem from="1556392278380" duration="1481000" />
       <workItem from="1556428335138" duration="896000" />
-      <workItem from="1556440818283" duration="7497000" />
+      <workItem from="1556440818283" duration="11701000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.27 at 21h 56m 51s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 28m 57s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.27 at 22h 21m 12s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 30m 20s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.27 at 23h 26m 41s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 31m 38s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.27 at 23h 31m 22s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 33m 05s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.28 at 12h 45m 47s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 37m 19s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.28 at 12h 54m 36s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 39m 21s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.28 at 13h 09m 40s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 42m 25s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.28 at 13h 09m 57s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 45m 20s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.28 at 13h 10m 49s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 47m 20s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Andrew_IdeaProjects_mytest_testng_xml - 2019.04.28 at 13h 16m 21s.xml">
-      <configuration name="C:/Users/Andrew/IdeaProjects/mytest/testng.xml" configurationId="TestNG" />
+    <history-entry file="ThirdTest - 2019.04.28 at 16h 48m 58s.xml">
+      <configuration name="ThirdTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105817000" />
+    <option name="totallyTimeSpent" value="110021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47575757" visible="true" weight="0.36762482" />
       <window_info id="Structure" order="1" sideWeight="0.5242424" side_tool="true" weight="0.3517398" />
@@ -521,7 +543,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5242424" side_tool="true" weight="0.3517398" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8804841" visible="true" weight="0.4599018" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8789713" weight="0.4599018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -530,8 +552,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.11951589" side_tool="true" visible="true" weight="0.4599018" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.44553706" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.12102874" side_tool="true" weight="0.4599018" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4440242" weight="0.3289689" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -544,39 +566,6 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="CDI" order="9" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47878787" visible="true" weight="0.3517398" />
-      <window_info id="Structure" order="1" sideWeight="0.5212121" side_tool="true" weight="0.26399395" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.881997" visible="true" weight="0.4599018" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.118003026" side_tool="true" weight="0.4599018" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.44553706" weight="0.3289689" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="CDI" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -712,46 +701,12 @@
     <entry file="file://$PROJECT_DIR$/target/classes/ru/org/autotest/SettingsPage.class" />
     <entry file="file://$PROJECT_DIR$/target/classes/ru/org/autotest/AutoSettings.class" />
     <entry file="file://$PROJECT_DIR$/target/classes/ru/org/autotest/HomePage.class" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/org/autotest/ThirdTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/org/autotest/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/EventScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/FailScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,30 +719,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#261#262#0" expanded="true" />
             <element signature="e#297#298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/ElectricToothbrushesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#2981#2982#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/CartPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -830,10 +761,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/AutoSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/EventScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/FailScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/CartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="112" selection-end-column="1" />
+        <state relative-caret-position="169">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#477#478#0" expanded="true" />
@@ -852,27 +845,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/org/autotest/ThirdTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/AutoSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="94">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/org/autotest/ElectricToothbrushesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#2906#2907#0" expanded="true" />
+            <element signature="e#2996#2997#0" expanded="true" />
           </folding>
         </state>
       </provider>

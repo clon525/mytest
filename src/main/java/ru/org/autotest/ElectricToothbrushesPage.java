@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class ElectricToothbrushesPage {
     private WebDriver driver;
@@ -62,17 +63,14 @@ public class ElectricToothbrushesPage {
     }
 
     @Step("choose the penultimate toothbrush")
-    public void chooseToothbrush(){
+    public void chooseToothbrush() {
         //list of "В корзину" buttons
-        List<WebElement> productList = driver.findElements(By.cssSelector("button._4qhIn2-ESi._3OWdR9kZRH." +
-                "THqSbzx07u"));
+        List<WebElement> productList = driver.findElements(By.cssSelector("[class*='_2w0qPDYwej']"));
         productList.get(productList.size() - 2).click();
-    }
+        (new WebDriverWait(driver, 20))
+                .until(ExpectedConditions.presenceOfElementLocated(By
+                        .cssSelector("[class*='_1sjxYfIabK _26mXJDBxtH']")));
 
-    @Step("Wait for small cart window")
-    public void waitSmallWindow(){
-        (new WebDriverWait(driver, 15)).until(ExpectedConditions.
-                visibilityOfAllElementsLocatedBy(By.linkText("Перейти в корзину")));
     }
 
     @Step("Click on cart button")

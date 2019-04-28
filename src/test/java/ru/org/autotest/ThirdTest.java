@@ -31,7 +31,6 @@ public class ThirdTest extends AutoSettings {
         electrictooth3.showToothbrushes();
         electrictooth3.checkToothbrushesPrice();
         electrictooth3.chooseToothbrush();
-        electrictooth3.waitSmallWindow();
         electrictooth3.clickCartButton();
 
 

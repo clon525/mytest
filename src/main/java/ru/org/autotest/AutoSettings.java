@@ -13,12 +13,11 @@ import java.util.concurrent.TimeUnit;
 
 public class AutoSettings {
     private static EventFiringWebDriver driver;
+    private static final String CHPATH = System.getProperty("chrome", "C:\\Users\\Andrew\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
     public static WebDriver getDriver() {
         return driver;
     }
-
-    public static final String CHPATH = System.getProperty("chrome", "C:\\Users\\Andrew\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
     @BeforeMethod
     public void setup() {

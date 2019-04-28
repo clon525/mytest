@@ -11,7 +11,9 @@ public class FailScreen extends TestListenerAdapter {
     public void onTestFailure(ITestResult result) {
         saveFail(result);
     }
-
+    public void onTestSkipped(ITestResult result) {
+        saveFail(result);
+    }
     @Attachment(value = "Page screenshot", type = "image/png")
     private byte[] saveFail(ITestResult result) {
         return ((TakesScreenshot) AutoSettings.getDriver()).getScreenshotAs(OutputType.BYTES);
