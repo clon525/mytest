@@ -1,9 +1,11 @@
 package ru.org.autotest;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.ITestContext;
 
+@Listeners({FailScreen.class})
 public class SecondTest extends AutoSettings {
     @DataProvider(name = "cityName")
 
@@ -23,7 +25,6 @@ public class SecondTest extends AutoSettings {
         home2.clickNewCityButton();
         home2.waitCityChange(cityName);
         home2.checkCity1(cityName);
-
         home2.clickProfileButton();
         LoginPage login2 = new LoginPage(getDriver());
         login2.inputLogin();
