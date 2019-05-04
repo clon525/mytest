@@ -35,7 +35,7 @@ public class AutoSettings {
     public void signOut() {
         // return system to default
         (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.header2-nav__user")));
-        if (driver.findElement(By.cssSelector("div.header2-nav__user")).getText() == "Мой профиль") {
+        if (driver.findElement(By.cssSelector("div.header2-nav__user")).getText().equals("Мой профиль")) {
             driver.findElement(By.className("header2-nav__user")).click();
             driver.findElement(By.xpath("/html/body/div[8]/div[2]/div/ul[4]/li[2]/a")).click();
         }

@@ -34,7 +34,7 @@ public class HomePage {
 
     @Step("Check first test - my profile")
     public void checkProfile() {
-        Assert.assertEquals(driver.findElement(By.cssSelector("div.header2-nav__user")).getText(), "Мой профиль", "Кнопка входа профился не найдена");
+        Assert.assertEquals(driver.findElement(By.cssSelector("div.header2-nav__user")).getText(), "Мой профиль", "Кнопка входа профиля не найдена");
     }
 
     @Step("Click on city")

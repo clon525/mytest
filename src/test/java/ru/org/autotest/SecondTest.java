@@ -10,8 +10,7 @@ public class SecondTest extends AutoSettings {
     @DataProvider(name = "cityName")
 
     public Object[] createCities(ITestContext context) {
-        return new Object[]{
-                "Хвалынск", "Энгельс", "Балаково"};
+        return new Object[]{"Хвалынск", "Энгельс", "Балаково"};
     }
 
     @Test(dataProvider = "cityName")
